@@ -1,2 +1,5 @@
 $govuk-global-styles: true;
 $govuk-assets-path: "#{$baseurl}/govuk-frontend/src/assets/";
+$govuk-font-family: roboto, sans-serif;
+$govuk-font-family-tabular: $govuk-font-family;
+$govuk-font-family-print: $govuk-font-family;
