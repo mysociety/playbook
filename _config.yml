@@ -1,0 +1,24 @@
+title: Default page title goes here
+description: Default page description goes here
+baseurl: /playbook
+host: 0.0.0.0
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - govuk-frontend/app/
+  - govuk-frontend/bin/
+  - govuk-frontend/config/
+  - govuk-frontend/dist/
+  - govuk-frontend/docs/
+  - govuk-frontend/lib/
+  - govuk-frontend/package/
+  - govuk-frontend/tasks/
+  - govuk-frontend/*.md
+  - govuk-frontend/*.njk
+  - govuk-frontend/*.json
+sass:
+  load_paths:
+    - _sass
+    - govuk-frontend/src
