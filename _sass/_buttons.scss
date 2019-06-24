@@ -1,0 +1,10 @@
+// govuk-frontend v2 has an annoying "feature" where it shifts the baseline of
+// buttons upwards a little, because it expects you to be using an old version
+// of the Transport typeface (which has an incorrect baseline).
+// govuk-frontend v3 will introduce a `$govuk-use-legacy-font` variable that
+// will let you opt out of the baseline shift, but since we’re on v2 for now,
+// here’s a quick rule to reset the baseline back to normal.
+.govuk-button, .govuk-button--start {
+    padding-top: govuk-spacing(2) - $govuk-border-width-form-element;
+    padding-bottom: govuk-spacing(2) - $govuk-border-width-form-element;
+}
