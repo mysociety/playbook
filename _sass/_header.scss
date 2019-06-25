@@ -1,0 +1,22 @@
+// govuk-frontend v2 has an annoying "feature" where it adds 3px of padding
+// to the top of the header, because it expects you to be using an old version
+// of the Transport typeface (which has an incorrect baseline).
+// govuk-frontend v3 fixes this, but since we’re on v2 for now, here’s a quick
+// rule to reset the padding back to normal.
+.govuk-header {
+    padding-top: 0;
+}
+
+.app-inline-logo {
+    margin-right: 0.4em;
+    vertical-align: -0.15em;
+
+    a:focus & g {
+        fill: $govuk-focus-text-colour;
+    }
+}
+
+.govuk-header__container {
+    border-image-source: linear-gradient(45deg, lighten(govuk-colour("blue"), 35%), lighten(govuk-colour("blue"), 10%), govuk-colour("blue"), darken(govuk-colour("blue"), 5%));
+    border-image-slice: 1;
+}

@@ -15,6 +15,8 @@
 <body class="govuk-template__body {% if page.bodyclass %}{{ page.bodyclass }}{% endif %}">
     <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
 
+    {% include header.html container_classes=page.header_container_classes %}
+
     {{ content }}
 
     <script src="{{ "/govuk-frontend/src/all.js" | prepend: site.baseurl }}"></script>

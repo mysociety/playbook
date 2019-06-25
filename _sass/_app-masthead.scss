@@ -1,0 +1,19 @@
+.app-masthead {
+    @include govuk-main-wrapper();
+    position: relative; // overlap the border-bottom on .govuk-header
+    margin-top: govuk-spacing(2) * -1; // overlap the border-bottom on .govuk-header
+    background-color: govuk-colour("blue");
+    background-image: linear-gradient(45deg, lighten(govuk-colour("blue"), 35%), lighten(govuk-colour("blue"), 10%), govuk-colour("blue"), darken(govuk-colour("blue"), 5%));
+    color: #fff;
+}
+
+.app-masthead__title {
+    @include govuk-responsive-margin(6, "bottom");
+    color: inherit;
+    max-width: 14em;
+}
+
+.app-masthead__description {
+    color: inherit;
+    max-width: 26em;
+}

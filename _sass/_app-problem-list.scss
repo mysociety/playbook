@@ -1,0 +1,41 @@
+.app-problem-list {
+    @include govuk-font($size: 24);
+    max-width: 28em;
+
+    li {
+        @include govuk-responsive-margin(6, "top");
+        @include govuk-responsive-padding(6, "top");
+        border-top: 1px solid $govuk-border-colour;
+        margin-bottom: 0;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+        display: block;
+
+        em {
+            font-style: inherit;
+            text-decoration: underline;
+            color: $govuk-link-hover-colour;
+        }
+
+        &:hover {
+            color: $govuk-link-hover-colour;
+            text-decoration: underline;
+
+            em {
+                color: inherit;
+            }
+        }
+
+        &:focus {
+            color: $govuk-focus-text-colour;
+            text-decoration: underline;
+
+            em {
+                color: inherit;
+            }
+        }
+    }
+}

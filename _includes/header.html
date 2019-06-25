@@ -1,0 +1,11 @@
+<header class="govuk-header" role="banner">
+  <div class="{{ include.container_classes | default: 'govuk-header__container govuk-width-container' }}">
+    <div class="govuk-header__product-name">
+      <a href="{{ '/' | prepend: site.baseurl }}" class="govuk-header__link govuk-header__link--service-name">
+        {% include app-inline-logo.html %}Participation Playbook
+      </a>
+    </div>
+    <div class="govuk-header__content">
+    </div>
+  </div>
+</header>

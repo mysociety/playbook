@@ -8,3 +8,6 @@ $baseurl: "{{ site.baseurl }}";
 @import "settings"; // from ../../_sass
 @import "all"; // from ../../govuk-frontend/src
 @import "buttons";  // from ../../_sass
+@import "header";  // from ../../_sass
+@import "app-masthead"; // from ../../_sass
+@import "app-problem-list"; // from ../../_sass
